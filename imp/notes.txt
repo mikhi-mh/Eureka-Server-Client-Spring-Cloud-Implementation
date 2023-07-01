@@ -1,0 +1,21 @@
+Add this annotation over the base class app OR Main Method Or Aplication
+(application which needs to be act as a Eureka-Client)
+@EnableEurekaClient
+by importing
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+
+
+
+Add this annotation over the base class app OR Main Method Or Aplication
+(application which needs to act as a Eureka-Server)
+@EnableEurekaServer
+by importing
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+
+after all u can see DashBoard of Registered Clients 
+on Eureka's Server DashBoard which is on
+
+----> http://localhost:8761/
+(why 8761 ? ...bcoz Eureka Server's Server.Port is 8761 )
